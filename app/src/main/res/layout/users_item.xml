@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/users_item_bg"
+    android:columnCount="3"
+    android:padding="@dimen/user_item_padding">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/user_item_icon_size"
+        android:layout_height="@dimen/user_item_icon_size"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"
+        android:layout_rowSpan="2"
+        android:layout_rowWeight="1"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:src="@mipmap/icon_user2" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"
+        android:layout_row="0"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="这是一个人"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"
+        android:layout_row="1"
+        android:gravity="center"
+        android:text="男" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"
+        android:layout_row="1"
+        android:gravity="center"
+        android:text="25岁" />
+</GridLayout>
